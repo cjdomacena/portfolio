@@ -4,7 +4,8 @@ export const theme = {
 		{
 			primary: "#222844",
 			secondary: "#EEEFF6",
-			white: "#fff"
+			white: "#fff",
+			tertiary: "hsla(229, 33%, 20%, 0.55)"
 		},
 		fonts: {
 			openSans: "'Open Sans', sans-serif ",

@@ -1,13 +1,17 @@
 import React from 'react'
 
 import { CustomButton } from './ButtonStyle'
-const Button = ({ text, type }) => {
+/* 
+* Wil take props text (content for the button), type (filled / outline), 
+* isActive*(true/false)
+*/
+const Button = ({ text, type, isActive }) => {
 
 
 	
 	return (
 
-			<CustomButton type={type} >
+			<CustomButton type={type} isActive={isActive}>
 				{text}
 			</CustomButton>
 

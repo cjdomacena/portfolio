@@ -1,8 +1,8 @@
 import './App.css';
 import Navbar from './Components/Navigation/Navbar';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 import Home from './Pages/Home';
-import { ThemeContext, ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'styled-components';
 import { theme } from './Components/Theme';
 
 function App() {
