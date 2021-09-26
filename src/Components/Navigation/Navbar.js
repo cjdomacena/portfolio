@@ -1,27 +1,30 @@
 import React from 'react'
-import Logo from './Logo'
+import Logo from './Logo/Logo'
 import Button from '../Buttons/Button'
-import { NavContainer, Nav, NavLinks, NavLink } from './NavbarStyle'
-import { Link } from 'react-router-dom'
-
+import { NavContainer, Nav, NavLinks, NavItem } from './NavbarStyle'
+import { NavLink, Link } from 'react-router-dom'
+import {GiHamburgerMenu } from 'react-icons/gi'
 
 const Navbar = () => {
-	return (
 
+	return (
 		<NavContainer>
 			<Nav>
-				<Link to="/" className="logo"><Logo className="logo" /></Link>
+				<Link to="/" className="logo">
+					<Logo className="logo" />
+				</Link>
 				<NavLinks>
-					<NavLink>
-						<Link>Home </Link>
-					</NavLink>
-					<NavLink>
-						<Link>Projects</Link>
-					</NavLink>
-					<NavLink>
-						<Button text="Say Hello!" />
-					</NavLink>
+					<NavItem   >
+						<NavLink to="/about" className="normal-link" activeClassName="active">About</NavLink>
+					</NavItem>
+					<NavItem >
+						<NavLink  to="/projects"  className="normal-link" activeClassName="active">Projects</NavLink>
+					</NavItem>
+					<NavItem>
+						<Button text="Say Hello!"  link="/"/>
+					</NavItem>
 				</NavLinks>
+				<GiHamburgerMenu className="burger"></GiHamburgerMenu>
 			</Nav>
 		</NavContainer>
 	)

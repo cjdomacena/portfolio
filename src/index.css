@@ -3,4 +3,21 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 16px;
+}
+html, body {
+  overflow: auto;
+}
+@media screen and (max-width: 640px)
+{
+
+  *
+  {
+    font-size: 14px;
+  }
+}
+
+a 
+{
+  text-decoration: none;
 }
